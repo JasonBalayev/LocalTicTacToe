@@ -185,13 +185,13 @@ Gamemode_button = Button(home_frame, text="Game Modes", bg='blue', fg="black", f
 Gamemode_button.place(x=250, y=200, width=110, height=50)
 
 # Home Page Images
-x_image = ImageTk.PhotoImage(Image.open("images\Grids\Players\X.png").resize((95, 95)))
+x_image = ImageTk.PhotoImage(Image.open("images\Players\X.png").resize((95, 95)))
 
 image_refs.append(x_image)  # Keep a reference
 home_x_label = Label(home_frame, image=x_image)
 home_x_label.place(x=430, y=190)
 
-o_image = ImageTk.PhotoImage(Image.open("images\Grids\Players\O.png").resize((150, 150)))
+o_image = ImageTk.PhotoImage(Image.open("images\Players\O.png").resize((150, 150)))
 image_refs.append(o_image)  # Keep a reference
 home_o_label = Label(home_frame, image=o_image)
 home_o_label.place(x=60, y=190)
