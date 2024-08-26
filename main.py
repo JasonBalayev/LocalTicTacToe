@@ -246,10 +246,9 @@ options_frame.place(x=0, y=0, width=600, height=500)
 # Updated Instructions Label
 instructions_text = (
     "Instructions:\n"
-    "1. Choose a game mode to start playing.\n"
-    "2. The goal is to complete a line (horizontally, vertically, or diagonally) with your symbol (X).\n"
-    "3. You will play as 'X', and the bot will play as 'O'.\n"
-    "4. If you lose, you can play again by clicking 'Play again'."
+    "1. Choose a game mode.\n"
+    "2. The goal is to complete a line (X/O)\n"
+    "3. If you lose, you can play again by clicking 'Play again'."
 )
 
 instructions_label = Label(
@@ -258,7 +257,8 @@ instructions_label = Label(
     font="Courier 12", 
     justify=LEFT, 
     bg="green",  # Green background to match game mode label
-    fg="white"  # White text for contrast
+    fg="white",  # White text for contrast
+    wraplength=500  # Set a wrap length to control the text wrapping
 )
 instructions_label.place(x=30, y=100, width=540, height=250)  # Adjusted placement and size
 
